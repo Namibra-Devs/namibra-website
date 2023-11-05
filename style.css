@@ -53,6 +53,16 @@ body {
     background-size: 100% 40%;
 }
 
+/* .service-div {
+    width: 100%;
+    background: url('./assets/imgs/Wave2.png') no-repeat bottom;
+    background-size: 100% 50%;
+} */
+
+.img-wave2 {
+    margin-top: -12rem;
+}
+
 .about-link {
     /* margin-right: 1rem; */
     color: var(--light-clr);
@@ -115,6 +125,7 @@ ul {
   
   .text-overlay {
     text-align: left;
+    cursor:default;
     color: var(--white);
     font-size: 14px;
     padding: 16px 32px;
