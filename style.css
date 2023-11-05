@@ -1,7 +1,73 @@
 :root {
- --colors: ;
+    /* Font */
+    --fs-body: 'Rubik', sans-serif;
+
+    /* Font Weight */
+    --fw-bold: 700;
+    --fw-bolder: 900;
+    --fw-normal: 400;
+    --fw-light:300;
+
+    /* Colors */
+    --primary-clr: #212121;
+    --primary-lt-clr: #545454;
+    --light-clr: #878787;
+    --lighter-clr: #BABABA;
+    --white-dark: #E8E8E8;
+    --white: #FFFFFF;
 }
 
-nav {
+body {
+    font-family: var(--fs-body);
+}
+
+.navbar {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 2px 2px 2px rgba(148, 147, 147, 0.336);
+}
+
+.hero-text, .about-light {
+    color: var(--light-clr);
+}
+
+.hero-main {
+    background-image: url('/assets/imgs/Waveslant.png');
+}
+
+.robot {
+    width: 25rem;
+}
+
+.robot-div {
+    /* background-image: url('./assets/imgs/img-border.png'); */
+}
+
+.about-div {
+    /* width: 100%; */
+    background: url('./assets/imgs/Wave.png') no-repeat bottom;
+    /* background-origin: content-box; */
+    background-size: contain;
+}
+
+.about-link {
+    /* margin-right: 1rem; */
+    color: var(--light-clr);
+}
+
+.about-links {
+    margin-left: -2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.link-active {
+    color: var(--primary-clr);
+    border-bottom: 2px solid var(--primary-clr);
+    font-weight: var(--fw-bold);
 }
