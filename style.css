@@ -43,10 +43,6 @@ body {
     width: 25rem;
 }
 
-.robot-div {
-    /* background-image: url('./assets/imgs/img-border.png'); */
-}
-
 .about-div {
     width: 100%;
     background: url('./assets/imgs/Wave.png') no-repeat bottom;
@@ -137,4 +133,16 @@ ul {
 
   .text-overlay p {
     font-size: .9rem;
+  }
+
+  .long-line{
+    padding: 1.8rem .15rem;
+  }
+
+  .long-text h4 {
+    font-size: .85rem;
+  }
+
+  .long-text p {
+    font-size: .8rem;
   }
