@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap  CS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Namibra | Services</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+        <div class="container-fluid mx-lg-5 px-lg-4 mx-2 px-2">
+            <div class="me-lg-5 pe-lg-5">
+                <a href="./index.html">
+                    <img src="/assets/imgs/logo/Logo-group.png" alt="" class="img-fluid w-75">
+                </a>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-lg-5 ps-lg-5 mt-4 mt-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 ms-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./applications.html">Application</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./contact.html" class="btn btn-dark px-4 text-light rounded-4">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="w-100">
+        
+        <!-- About -->
+        <div class="about-page">
+            <div class="container my-5 py-5">
+                <div class="header">
+                    <h5 class="fs-4 fw-bold">Our Services</h5>
+                    <p class="mb-5">Lorem Ipsum is simply dummy text of the printing</h5>
+                </div>
+
+                <!-- Mission -->
+                <div class="mission">
+                    <div class="container my-5 py-5 w-100">
+                        <div class="header text-center d-lg-flex flex-row gap-5 justify-content-evenly">
+                            <!-- <p class="about-light"></p> -->
+                            <div class="p-4 w-100">
+                                <h5 class="fs-4 text-start">Web Development and Design</h5>
+                                <p class="text-start ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industryLorem Ipsum is simply dummy text of the printing and typesetting industry..
+                                </p>
+                            </div>
+                            <div class="w-100">
+                                <svg width="250" height="250" viewBox="0 0 363 343" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="363" height="343" fill="url(#pattern0)" />
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                            height="1">
+                                            <use xlink:href="#image0_2719_496"
+                                                transform="matrix(0.0025 0 0 0.00264577 0 -0.0291545)" />
+                                        </pattern>
+                                        <image id="image0_2719_496" width="400" height="400"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAIABJREFUeF7tnQvTFcXxxhdeQEjA3MxdCIoxl6rcKh8kmnzOAJ8kl38qMWVpFBBNyqKI4gUV8v6rj4wuh3PO9tPTc+nZ51S9xeWdmZ35TU8/0z27e05M/JAACZAACZCAgcAJQx1WIQESIAESIIGJAkIjIAESIAESMBGggJiwsRIJkAAJkAAFhDZAAiRAAiRgIkABMWFjJRIgARIgAQoIbYAESIAESMBEgAJiwsZKJEACJEACFBDaAAmQAAmQgIkABcSEjZVIgARIgAQoILQBEiABEiABEwEKiAkbK5EACZAACVBAaAMkQAIkQAImAhQQEzZWIgESIAESoIDQBkiABEiABEwEKCAmbKxEAiRAAiRAAaENkAAJkAAJmAhQQEzYWIkESIAESIACQhsgARIgARIwEaCAmLCxEgmQAAmQAAWENkACJEACJGAiQAExYWMlEiABEiABCghtgARIgARIwESAAmLCxkokQAIkQAIUENoACZAACZCAiQAFxISNlUiABEiABCggtAESIAESIAETAQqICRsrkQAJkAAJUEBoAyRAAiRAAiYCFBATNlYiARIgARKggNAGSIAESIAETAQoICZsrEQCJEACJEABoQ2QAAmQAAmYCFBATNhYiQRIgARIgAJCGyABEiABEjARoICYsLESCZAACZAABYQ2QAIkQAIkYCJAATFhYyUSIAESIAEKCG2ABEiABEjARIACYsLGSiRAAiRAAhQQ2sCqCFy+fPn4f//733T27Nnp1KlT09HR0XR8fLz58+HDh9OJEye++LeUSx8pI5/0e/m7/J/8fPrpp9Nnn322qf/WW29xTa3KotY9WBr7uud/qNEncRAnn5x96wHOhSeJzo0bN7juWk8Mr+9CgIbsgpGN1CKwSyTESSfRqNWP3OskYUntpP6/+eabXJO5cFm/GgEaazXUvBBK4OLFi8cnT54MJw7oOHeVT6IofzJi8SDKNkoQoICUoMo2TQQkuogYTZgGa6iUzlxu3rzJdWvgxyr+BGiI/kzZopLAj370o89Pph99oqWhlMMsVkwERQ76b926xXVcjDIbPkSAhkf7qEZABGN+FxMFwwf99nkKU14+XNnKMgEKyDIjlsggIGmpjOqsaiAwTwPyUN4A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" />
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="header text-center d-lg-flex flex-row-reverse gap-5 justify-content-evenly mt-5">
+                            <!-- <p class="about-light"></p> -->
+                            <div class="p-4 w-100">
+                                <h5 class="fs-4 text-start">Software Development</h5>
+                                <p class="text-start ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industryLorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                            <div class="w-100">
+                                <svg width="250" height="250" viewBox="0 0 378 379" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M129.876 284.296C129.853 278.39 132.192 272.474 136.898 267.731L172.194 232.153C176.9 227.409 182.797 225.023 188.703 224.999C194.61 224.976 200.525 227.315 205.269 232.021L240.847 267.318C245.591 272.024 247.977 277.921 248 283.827C248.024 289.733 245.685 295.649 240.978 300.392L205.682 335.97C200.976 340.714 195.079 343.1 189.173 343.124C183.267 343.147 177.351 340.808 172.607 336.102L137.029 300.805C132.286 296.099 129.9 290.202 129.876 284.296ZM224.375 283.921L188.797 248.624L153.501 284.202L189.079 319.499L224.375 283.921ZM224 189.421C223.976 183.515 226.315 177.6 231.022 172.856L266.318 137.278C271.024 132.534 276.921 130.148 282.827 130.125C288.733 130.101 294.649 132.44 299.393 137.146L334.971 172.443C339.714 177.149 342.1 183.046 342.124 188.952C342.147 194.858 339.808 200.774 335.102 205.518L299.806 241.096C295.1 245.839 289.203 248.225 283.297 248.249C277.39 248.272 271.475 245.933 266.731 241.227L231.153 205.931C226.409 201.224 224.023 195.328 224 189.421ZM318.499 189.046L282.921 153.749L247.625 189.328L283.203 224.624L318.499 189.046ZM35.0013 190.172C34.9779 184.266 37.3169 178.351 42.023 173.607L77.3194 138.029C82.0256 133.285 87.9225 130.899 93.8287 130.876C99.7349 130.852 105.65 133.191 110.394 137.897L145.972 173.194C150.716 177.9 153.102 183.797 153.125 189.703C153.149 195.609 150.81 201.525 146.104 206.269L110.807 241.847C106.101 246.59 100.204 248.976 94.2981 249C88.3919 249.023 82.4763 246.684 77.7325 241.978L42.1545 206.682C37.4107 201.975 35.0248 196.079 35.0013 190.172ZM129.501 189.797L93.9225 154.5L58.6261 190.079L94.2042 225.375L129.501 189.797ZM129.125 95.2976C129.102 89.3914 131.441 83.4758 136.147 78.7321L171.443 43.154C176.149 38.4103 182.046 36.0243 187.952 36.0008C193.859 35.9774 199.774 38.3164 204.518 43.0226L240.096 78.319C244.84 83.0252 247.226 88.922 247.249 94.8282C247.273 100.734 244.934 106.65 240.227 111.394L204.931 146.972C200.225 151.716 194.328 154.101 188.422 154.125C182.516 154.148 176.6 151.809 171.856 147.103L136.278 111.807C131.534 107.101 129.149 101.204 129.125 95.2976ZM223.624 94.9221L188.046 59.6257L152.75 95.2037L188.328 130.5L223.624 94.9221Z"
+                                        fill="#545454" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="header text-center d-lg-flex flex-row gap-5 justify-content-evenly mt-5">
+                            <!-- <p class="about-light"></p> -->
+                            <div class="p-4 w-100">
+                                <h5 class="fs-4 text-start">Cybersecurity and Data Protection</h5>
+                                <p class="text-start ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industryLorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                            </div>
+                            <div class="w-100">
+                                <svg width="250" height="250" viewBox="0 0 320 320" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M266.333 80.3333C266.333 51.4267 217.493 27 159.667 27C101.84 27 53 51.4267 53 80.3333V107C53 135.907 101.84 160.333 159.667 160.333C217.493 160.333 266.333 135.907 266.333 107V80.3333ZM159.667 253.667C101.84 253.667 53 229.24 53 200.333V240.333C53 269.24 101.84 293.667 159.667 293.667C217.493 293.667 266.333 269.24 266.333 240.333V200.333C266.333 229.24 217.493 253.667 159.667 253.667Z"
+                                        fill="#212121" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Approaches -->
+                <div class="container my-5 py-5 w-100">
+                    <div class="header text-center">
+                        <p class="about-light">Our Approaches</p>
+                        <h5 class="fs-4">Lorem Ipsum is simply dummy text of the printing</h5>
+                    </div>
+
+                    <div class="d-lg-flex flex-wrap justify-content-center gap-3  mt-4 w-100">
+                        <div class="col-3">
+                            <div class="overlay-text">
+                                <img src="./assets/imgs/other/Component1.png" alt="" class="approaches">
+                                <div class="mask">
+                                    <div class="text-overlay">
+                                        <h4>Idea Generation and Validation</h4>
+                                        <p class="">Identify a problem or a market need.Start by identifying a problem
+                                            or an
+                                            unmet
+                                            need in the market that your IT startup can address.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="overlay-text">
+                                <img src="./assets/imgs/other/Component2.png" alt="" class="approaches">
+                                <div class="mask">
+                                    <div class="text-overlay">
+                                        <h4>Product Development</h4>
+                                        <p class="">Identify a problem or a market need.Start by identifying a problem
+                                            or an
+                                            unmet need in the market that your IT startup can address.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="overlay-text">
+                                <img src="./assets/imgs/other/Component3.png" alt="" class="approaches">
+                                <div class="mask">
+                                    <div class="text-overlay">
+                                        <h4>Market Launch and Growth</h4>
+                                        <p class="">Identify a problem or a market need.Start by identifying a problem
+                                            or an
+                                            unmet need in the market that your IT startup can address.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="overlay-text">
+                                <img src="./assets/imgs/other/Component4.png" alt="" class="approaches">
+                                <div class="mask">
+                                    <div class="text-overlay">
+                                        <h4>Sustainability and Scaling</h4>
+                                        <p class="">Identify a problem or a market need.Start by identifying a problem
+                                            or
+                                            an unmet need in the market that your IT startup can address.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="overlay-text">
+                                <img src="./assets/imgs/other/Component3.png" alt="" class="approaches">
+                                <div class="mask">
+                                    <div class="text-overlay">
+                                        <h4>Market Launch and Growth</h4>
+                                        <p class="">Identify a problem or a market need.Start by identifying a problem
+                                            or an
+                                            unmet need in the market that your IT startup can address.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="overlay-text">
+                                <img src="./assets/imgs/other/Component2.png" alt="" class="approaches">
+                                <div class="mask">
+                                    <div class="text-overlay">
+                                        <h4>Product Development</h4>
+                                        <p class="">Identify a problem or a market need.Start by identifying a problem
+                                            or an
+                                            unmet need in the market that your IT startup can address.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expertise -->
+                <div class="expertise-div">
+                    <div class="container my-5 py-5">
+                        <div class="header  my-4">
+                            <p class="about-light">Our Expertise</p>
+                            <h5 class="fs-4 w-50">Lorem Ipsum is simply dummy text of the printing</h5>
+                        </div>
+
+                        <div class="d-flex w-100">
+                            <div class="long-line bg-light rounded-3"></div>
+                            <div
+                                class="rounded-3 px-4 py-1 long-text bg-light ms-2 d-flex align-items-center justify-content-between w-100">
+                                <div class="pt-2">
+                                    <h4 class="fs-5">Custom Software Development</h4>
+                                    <p class="d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+                                        tempore porro ipsa,
+                                        perferendis est fuga neque, consequatur voluptatibus repellendus ratione dolores
+                                        ipsum
+                                        repudiandae enim accusantium?</p>
+                                </div>
+                                <button class="btn btn-light border-0">
+                                    <svg width="50" height="50" viewBox="0 0 114 114" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M35.0821 74.1752C34.2704 75.2461 34.3637 76.7904 35.3545 77.7812C36.4353 78.8621 38.175 78.8749 39.24 77.8098L73.1386 43.9113L73.2703 68.5342L73.3023 68.9405C73.5055 70.2672 74.6529 71.2946 76.0324 71.3076C77.5498 71.3219 78.7734 70.1034 78.7654 68.5861L78.6 37.3288C78.6002 37.1873 78.5896 37.0455 78.5681 36.905L78.5678 36.9004C78.3634 35.57 77.2097 34.5416 75.8262 34.5344L44.5506 34.3714L44.1448 34.3991C42.8218 34.5884 41.8161 35.7252 41.8292 37.1047C41.8437 38.6221 43.0855 39.8586 44.6028 39.8665L69.2269 39.9947L35.3259 73.8957L35.0821 74.1752Z"
+                                            fill="#200E32" />
+                                    </svg>
+
+                                    </btn>
+                            </div>
+                        </div>
+                        <div class="d-flex acive-div mt-4 w-100">
+                            <div class="long-line bg-dark rounded-3"></div>
+                            <div
+                                class="rounded-3 px-4 py-1 long-text bg-dark text-light ms-2 d-flex align-items-center justify-content-between w-100">
+                                <div class="pt-2">
+                                    <h4 class="fs-5">Custom Software Development</h4>
+                                    <p class="fs-6 px-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Veritatis
+                                        tempore porro ipsa,
+                                        perferendis est fuga neque, consequatur voluptatibus repellendus ratione dolores
+                                        ipsum
+                                        repudiandae enim accusantium?</p>
+                                </div>
+                                <button class="btn btn-dark border-0">
+                                    <svg width="50" height="50" viewBox="0 0 113 113" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M79.5886 41.2283C80.5212 40.2608 80.6111 38.7163 79.7443 37.6154C78.7988 36.4143 77.0728 36.196 75.8894 37.1277L38.222 66.7823L41.0013 42.3164L41.0176 41.9092C40.9726 40.5678 39.9546 39.412 38.5864 39.236C37.0813 39.0425 35.7222 40.1078 35.5509 41.6155L32.021 72.6732C32.004 72.8137 31.9978 72.9558 32.0025 73.0979L32.0023 73.1025C32.048 74.4476 33.072 75.6052 34.445 75.7759L65.4822 79.6341L65.8884 79.6545C67.2245 79.6229 68.3575 78.613 68.5075 77.2416C68.6725 75.7331 67.5855 74.3585 66.0797 74.1713L41.6434 71.1338L79.3135 41.4771L79.5886 41.2283Z"
+                                            fill="white" />
+                                    </svg>
+
+
+                                    </btn>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-4 w-100">
+                            <div class="long-line bg-light rounded-3"></div>
+                            <div
+                                class="rounded-3 px-4 py-1 long-text bg-light ms-2 d-flex align-items-center justify-content-between w-100">
+                                <div class="pt-2">
+                                    <h4 class="fs-5">Custom Software Development</h4>
+                                    <p class="d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+                                        tempore porro ipsa,
+                                        perferendis est fuga neque, consequatur voluptatibus repellendus ratione dolores
+                                        ipsum
+                                        repudiandae enim accusantium?</p>
+                                </div>
+                                <button class="btn btn-light border-0">
+                                    <svg width="50" height="50" viewBox="0 0 114 114" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M35.0821 74.1752C34.2704 75.2461 34.3637 76.7904 35.3545 77.7812C36.4353 78.8621 38.175 78.8749 39.24 77.8098L73.1386 43.9113L73.2703 68.5342L73.3023 68.9405C73.5055 70.2672 74.6529 71.2946 76.0324 71.3076C77.5498 71.3219 78.7734 70.1034 78.7654 68.5861L78.6 37.3288C78.6002 37.1873 78.5896 37.0455 78.5681 36.905L78.5678 36.9004C78.3634 35.57 77.2097 34.5416 75.8262 34.5344L44.5506 34.3714L44.1448 34.3991C42.8218 34.5884 41.8161 35.7252 41.8292 37.1047C41.8437 38.6221 43.0855 39.8586 44.6028 39.8665L69.2269 39.9947L35.3259 73.8957L35.0821 74.1752Z"
+                                            fill="#200E32" />
+                                    </svg>
+
+                                    </btn>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                </div>
+
+                </div>
+    </main>
+
+                <footer class="bg-dark w-100 h-100 pt-5 pb-4 px-2 text-light">
+                    <div class="container pt-5">
+                        <div class="d-lg-flex justify-content-around align-items-start">
+                            <div class="about w-50">
+                                <a href="" class="fs-5 fw-bold text-light">Namibra</a>
+                                <p class="">Lorem ipsum diolor emet atet lorem ipsum dilore amet lorem iosum dilor
+                                    amet
+                                    lorem ipsum
+                                    diilor amet ncdnd dnjsdkkdls jdslkdsp;mkldkmmckmm lksdls slddslkksd l</p>
+                                <div>
+                                    <p class="tel">+2338096542356</p>
+                                    <p class="">info@Namibra.com</p>
+                                </div>
+                            </div>
+
+                            <div class="quick-links mt-lg-0 mt-5">
+                                <h4 class="fs-5 fw-bold">Quick Links</h4>
+                                <ul class="links-q">
+                                    <li class="my-1"><a href="./about.html" class="text-light">Abouut Us</a></li>
+                                    <li class="my-1"><a href="./services.html" class="text-light">Services</a></li>
+                                    <li class="my-1"><a href="./careers.html" class="text-light">Careers</a></li>
+                                    <li class="my-1"><a href="./applications.html" class="text-light">Application</a>
+                                    </li>
+                                    <li class="my-1"><a href="./contact.html" class="text-light">Contact Us</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="socials mt-lg-0 mt-5">
+                                <ul class="d-flex p-lg-2 p-0">
+                                    <li class="mx-lg-2"><a href="" class="text-light">
+                                            <svg width="25" height="25" viewBox="0 0 33 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2618_1680)">
+                                                    <path
+                                                        d="M32.3115 16C32.3115 7.1635 25.148 0 16.3115 0C7.47502 0 0.311523 7.16337 0.311523 16C0.311523 23.986 6.16252 30.6054 13.8115 31.8056V20.625H9.74902V16H13.8115V12.475C13.8115 8.465 16.2003 6.25 19.8549 6.25C21.6055 6.25 23.4365 6.5625 23.4365 6.5625V10.5H21.419C19.4313 10.5 18.8115 11.7334 18.8115 12.9987V16H23.249L22.5396 20.625H18.8115V31.8056C26.4605 30.6054 32.3115 23.9861 32.3115 16Z"
+                                                        fill="#E5E5E5" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2618_1680">
+                                                        <rect width="32" height="32" fill="white"
+                                                            transform="translate(0.311523)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                        </a></li>
+                                    <li class="mx-2"><a href="" class="text-light">
+                                            <svg width="25" height="25" viewBox="0 0 40 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M39.5096 3.89677C38.0419 4.54699 36.4851 4.9738 34.8909 5.16299C36.5514 4.16778 37.8264 2.59181 38.4267 0.714072C36.8482 1.65078 35.1212 2.31075 33.3203 2.66546C31.8534 1.10267 29.7636 0.125977 27.4505 0.125977C23.0094 0.125977 19.4087 3.72651 19.4087 8.16732C19.4087 8.79767 19.4799 9.41133 19.617 10C12.9337 9.66458 7.00837 6.4632 3.04205 1.59798C2.34999 2.78565 1.95344 4.16716 1.95344 5.64069C1.95344 8.43067 3.37323 10.8919 5.53085 12.3341C4.25384 12.2941 3.00492 11.9491 1.88837 11.3281C1.88791 11.3618 1.88791 11.3955 1.88791 11.4293C1.88791 15.3255 4.65981 18.5757 8.33843 19.3145C7.15426 19.6365 5.91214 19.6837 4.70697 19.4523C5.7302 22.6471 8.70008 24.9719 12.2189 25.037C9.4667 27.1937 5.99922 28.4794 2.23179 28.4794C1.58261 28.4794 0.942606 28.4412 0.313477 28.367C3.87221 30.6486 8.09912 31.9799 12.6404 31.9799C27.4319 31.9799 35.5202 19.7264 35.5202 9.09991C35.5202 8.75112 35.5126 8.40433 35.4969 8.05953C37.0713 6.92144 38.4301 5.5118 39.5096 3.89677Z"
+                                                    fill="#E5E5E5" />
+                                            </svg>
+
+                                        </a></li>
+                                    <li class="mx-2"><a href="" class="text-light">
+                                            <svg width="25" height="25" viewBox="0 0 34 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M34 19.6191V32H26.8221V20.448C26.8221 17.5453 25.7835 15.5654 23.1862 15.5654C21.203 15.5654 20.0218 16.901 19.5033 18.1913C19.3137 18.6527 19.2651 19.2953 19.2651 19.9413V32H12.0839C12.0839 32 12.1812 12.4362 12.0839 10.4077H19.2651V13.4681L19.2181 13.5386H19.2651V13.4681C20.2181 12 21.9211 9.90101 25.7349 9.90101C30.458 9.90101 34 12.9883 34 19.6191ZM4.5738 0C2.1191 0 0.511719 1.61074 0.511719 3.72987C0.511719 5.80201 2.07212 7.46141 4.47984 7.46141H4.52682C7.03185 7.46141 8.58722 5.80201 8.58722 3.72987C8.5436 1.61074 7.03185 0 4.5738 0ZM0.937893 32H8.11575V10.4077H0.937893V32Z"
+                                                    fill="#E5E5E5" />
+                                            </svg>
+                                        </a></li>
+                                    <li class="mx-2"><a href="" class="text-light">
+                                            <svg width="25" height="25" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M16 0C11.6544 0 11.1104 0.0191999 9.4032 0.0959999C7.7008 0.1744 6.5376 0.4448 5.52 0.84C4.45198 1.24135 3.4844 1.87093 2.6848 2.6848C1.87097 3.48444 1.2414 4.452 0.84 5.52C0.4448 6.5376 0.1744 7.7008 0.0959999 9.4032C0.0175999 11.1104 0 11.6544 0 16C0 20.3456 0.0175999 20.8896 0.0959999 22.5968C0.1744 24.2992 0.4448 25.4624 0.84 26.48C1.24144 27.548 1.87101 28.5155 2.6848 29.3152C3.48447 30.129 4.45203 30.7586 5.52 31.16C6.5376 31.5552 7.7008 31.8256 9.4032 31.904C11.1104 31.9808 11.6544 32 16 32C20.3456 32 20.8896 31.9808 22.5968 31.904C24.2992 31.8256 25.4624 31.5552 26.48 31.16C27.548 30.7586 28.5156 30.129 29.3152 29.3152C30.129 28.5156 30.7586 27.548 31.16 26.48C31.5552 25.4624 31.8256 24.2992 31.904 22.5968C31.9808 20.8896 32 20.3456 32 16C32 11.6544 31.9808 11.1104 31.904 9.4032C31.8256 7.7008 31.5552 6.5376 31.16 5.52C30.7586 4.452 30.129 3.48444 29.3152 2.6848C28.5156 1.87093 27.548 1.24135 26.48 0.84C25.4624 0.4448 24.2992 0.1744 22.5968 0.0959999C20.8896 0.0191999 20.3456 0 16 0ZM16 2.8832C20.272 2.8832 20.7776 2.8992 22.464 2.976C24.0256 3.048 24.872 3.3072 25.4368 3.5264C26.1824 3.8176 26.7168 4.1648 27.2768 4.7232C27.8368 5.2832 28.1824 5.8176 28.4736 6.5632C28.6912 7.128 28.9536 7.9744 29.024 9.5344C29.1008 11.2224 29.1168 11.7264 29.1168 16C29.1168 20.272 29.1008 20.7776 29.024 22.464C28.952 24.0256 28.6912 24.872 28.4736 25.4368C28.2171 26.1318 27.8081 26.7605 27.2768 27.2768C26.7168 27.8368 26.1824 28.1824 25.4368 28.4736C24.872 28.6912 24.0256 28.9536 22.4656 29.024C20.7792 29.1008 20.2736 29.1168 16 29.1168C11.728 29.1168 11.2208 29.1008 9.536 29.024C7.9744 28.952 7.128 28.6912 6.5632 28.4736C5.86814 28.2172 5.23939 27.8082 4.7232 27.2768C4.19177 26.7606 3.78282 26.1319 3.5264 25.4368C3.3072 24.872 3.0464 24.0256 2.976 22.4656C2.8992 20.7776 2.8832 20.2736 2.8832 16C2.8832 11.728 2.8992 11.2224 2.976 9.536C3.048 7.9744 3.3072 7.128 3.5264 6.5632C3.8176 5.8176 4.1648 5.2832 4.7232 4.7232C5.2832 4.1632 5.8176 3.8176 6.5632 3.5264C7.128 3.3072 7.9744 3.0464 9.5344 2.976C11.2224 2.8992 11.7264 2.8832 16 2.8832ZM16 21.3328C14.5857 21.3328 13.2292 20.771 12.2291 19.7709C11.229 18.7708 10.6672 17.4143 10.6672 16C10.6672 14.5857 11.229 13.2292 12.2291 12.2291C13.2292 11.229 14.5857 10.6672 16 10.6672C17.4143 10.6672 18.7708 11.229 19.7709 12.2291C20.771 13.2292 21.3328 14.5857 21.3328 16C21.3328 17.4143 20.771 18.7708 19.7709 19.7709C18.7708 20.771 17.4143 21.3328 16 21.3328ZM16 7.784C14.9211 7.784 13.8527 7.99651 12.8559 8.40941C11.8591 8.8223 10.9533 9.42749 10.1904 10.1904C9.42748 10.9533 8.8223 11.8591 8.40941 12.8559C7.99651 13.8527 7.784 14.9211 7.784 16C7.784 17.0789 7.99651 18.1473 8.40941 19.1441C8.8223 20.1409 9.42748 21.0467 10.1904 21.8096C10.9533 22.5725 11.8591 23.1777 12.8559 23.5906C13.8527 24.0035 14.9211 24.216 16 24.216C18.179 24.216 20.2688 23.3504 21.8096 21.8096C23.3504 20.2688 24.216 18.179 24.216 16C24.216 13.821 23.3504 11.7312 21.8096 10.1904C20.2688 8.64961 18.179 7.784 16 7.784ZM26.4608 7.4592C26.4608 7.71134 26.4111 7.96101 26.3146 8.19395C26.2182 8.4269 26.0767 8.63856 25.8984 8.81684C25.7202 8.99513 25.5085 9.13656 25.2756 9.23305C25.0426 9.32954 24.7929 9.3792 24.5408 9.3792C24.2887 9.3792 24.039 9.32954 23.806 9.23305C23.5731 9.13656 23.3614 8.99513 23.1832 8.81684C23.0049 8.63856 22.8634 8.4269 22.767 8.19395C22.6705 7.96101 22.6208 7.71134 22.6208 7.4592C22.6208 6.94998 22.8231 6.46162 23.1832 6.10155C23.5432 5.74149 24.0316 5.5392 24.5408 5.5392C25.05 5.5392 25.5384 5.74149 25.8984 6.10155C26.2585 6.46162 26.4608 6.94998 26.4608 7.4592Z"
+                                                    fill="#E5E5E5" />
+                                            </svg>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-center mt-5">&copy; <a href="" class="text-light">Namibra</a> 2023</p>
+                    </div>
+
+                </footer>
+    </main>
+</body>
+
+</html>
