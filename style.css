@@ -41,6 +41,7 @@ a {
 
 .hero-main {
     background-image: url('/assets/imgs/waves/Waveslant.png');
+    background-size: 100% 120%;
 }
 
 .robot {
@@ -57,7 +58,6 @@ a {
     width: 100%;
     background: url('./assets/imgs/waves/Wave5.svg') no-repeat bottom;
     background-size: 100% 100%;
-    /* background: red; */
 }
 
 .img-wave2 {
@@ -172,8 +172,8 @@ ul {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.1px);
     -webkit-backdrop-filter: blur(11.1px);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -212,27 +212,37 @@ ul {
     margin-top: -1.5rem;
 }
 
-.testimonials-div {
+.testimonials-div,
+.contact-about {
     width: 100%;
     background: url('./assets/imgs/waves/Wave3.svg') no-repeat bottom;
-    background-size: 100% 100%;  
-    height: 110vh; 
+    background-size: 100% 100%;
+    height: 110vh;
 }
+
 .contact-div {
     width: 100%;
-    background: url('./assets/imgs//wavesWave4.svg') no-repeat bottom;
-    background-size: 100% 100%;  
-    height: 110vh; 
+    background: url('./assets/imgs//waves/Wave4.svg') no-repeat bottom;
+    background-size: 100% 100%;
+    height: 110vh;
+}
+
+.mission {
+    width: 100%;
+    background: url('./assets/imgs//waves/Wave6.svg') no-repeat bottom;
+    background-size: 100% 160%;
+    /* height: 110vh;  */
 }
 
 .newsletter-bg {
     width: 100%;
     background: url('./assets/imgs/other/newsletter-bg.svg') no-repeat bottom;
-    height: 100%; 
+    height: 100%;
     background-size: cover;
 }
 
-.testimonial-img, .blog-img {
+.testimonial-img,
+.blog-img {
     max-width: 100%;
     width: 15rem;
 }
