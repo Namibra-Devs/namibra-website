@@ -261,3 +261,7 @@ ul {
 .links-q {
     margin-left: -2rem;
 }
+
+.objective-list {
+    list-style-type: disc;
+}
