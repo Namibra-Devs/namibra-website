@@ -239,6 +239,12 @@ ul {
     height: 100%;
     background-size: cover;
 }
+.job-view-bg {
+    width: 100%;
+    background: url('./assets/imgs/other/job-view.svg') no-repeat bottom;
+    height: 100%;
+    background-size: cover;
+}
 
 .testimonial-img,
 .blog-img {
