@@ -143,21 +143,23 @@
                         <h5 class="fs-4">About Namibra</h5>
 
                         <div class="w-100 about-links" id="link-div">
-                            <ul class="mt-3 d-flex flex-row">
-                                <li class="nav-item about-link link-active"><button class="nav-link"
-                                        href="#whoweare">Who
+                            <ul class="mt-3 d-flex flex-row" id="myTab" role="tablist">
+                                <li class="nav-item about-link link-active"  role="presentation">
+                                    <button class="nav-link  active"
+                                        href="#whoweare" id="whoweare-tab" data-bs-toggle="tab" data-bs-target="#whoweare" type="button" role="tab" aria-controls="whoweare" aria-selected="true">Who
                                         We
                                         Are</button></li>
-                                <li class="nav-item about-link mx-5"><button class="nav-link"
+                                <li class="nav-item about-link mx-5"  role="presentation">
+                                    <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-controls="misssion" aria-selected="true"
                                         href="#mission">Mission</button>
                                 </li>
-                                <li class="nav-item about-link"><button class="nav-link" href="#vision">Vision</button>
+                                <li class="nav-item about-link"  role="presentation"><button class="nav-link" href="#vision" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-controls="vision" aria-selected="true">Vision</button>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="mb-2">
-                            <p id="whoweare">
+                        <div class="mb-2 tab-content" id="myTabContent">
+                            <div id="whoweare" class="tab-pane fade show active" role="tabpanel" aria-labelledby="whoweare-tab" tabindex="0">
                                 Namibra is a leading digital agency dedicated to empowering businesses and
                                 individuals
                                 with innovative digital solutions.
@@ -170,8 +172,8 @@
                                 results. We understand the unique challenges and opportunities in the digital world
                                 and
                                 provide personalized solutions that drive growth and success
-                            </p>
-                            <p id="mission" class="d-none">
+                            </div>
+                            <siv id="mission" class="tab-pane fade" role="tabpanel" aria-labelledby="mission-tab" tabindex="0">
                                 Namibra is a leading digital agency dedicated to empowering businesses and
                                 individuals
                                 with innovative digital solutions.
@@ -184,8 +186,8 @@
                                 results. We understand the unique challenges and opportunities in the digital world
                                 and
                                 provide personalized solutions that drive growth and success.
-                            </p>
-                            <p id="vision" class="d-none">
+                            </div>
+                            <div id="vision"  class="tab-pane fade" role="tabpanel" aria-labelledby="vision-tab" tabindex="0">
                                 We aim to empower individuals, businesses, and communities with the tools and
                                 knowledge
                                 to navigate the digital landscape with confidence, resilience, and purpose.
@@ -193,7 +195,7 @@
                                 With our passionate and agile team, we strive to lead the digital revolution,
                                 driving
                                 innovation, and creating lasting impacts that shape the future.
-                            </p>
+                            </div>
                         </div>
                         <div class="text-center text-lg-start">
                             <a href="" class="btn btn-dark px-4 py-2 text-light rounded-3">Learn More</a>
