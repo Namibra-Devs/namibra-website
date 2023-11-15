@@ -216,21 +216,29 @@ ul {
     width: 100%;
     background: url('./assets/imgs/waves/Wave3.svg') no-repeat bottom;
     background-size: 100% 100%;
-    /* height: 100vh; */
+    height: 110vh;
 }
 
 .contact-div {
     width: 100%;
     background: url('./assets/imgs//waves/Wave4.svg') no-repeat bottom;
     background-size: 100% 100%;
-    /* height: 100vh; */
+    height: 110vh;
 }
 
 .mission {
     width: 100%;
     background: url('./assets/imgs//waves/Wave6.svg') no-repeat bottom;
     background-size: 100% 160%;
-    /* height: 110vh;  */
+    height: 110vh; 
+}
+
+@media (max-width: 780px) {
+    .contact-div,
+    .testimonials-div,
+.contact-about {
+    height: 100%;
+}
 }
 
 .newsletter-bg {
@@ -284,7 +292,9 @@ ul {
     font-size: 1rem;
 }
 
-
+.active {
+    color: var(--primary-clr) !important;
+}
 /* Success Animate */
 
 .pop-animate { 
