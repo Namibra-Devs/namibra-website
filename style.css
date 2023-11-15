@@ -216,14 +216,14 @@ ul {
     width: 100%;
     background: url('./assets/imgs/waves/Wave3.svg') no-repeat bottom;
     background-size: 100% 100%;
-    height: 110vh;
+    /* height: 110vh; */
 }
 
 .contact-div {
     width: 100%;
     background: url('./assets/imgs//waves/Wave4.svg') no-repeat bottom;
     background-size: 100% 100%;
-    height: 110vh;
+    /* height: 110vh; */
 }
 
 .mission {
@@ -278,6 +278,10 @@ ul {
 
 .pe-pointer {
     cursor: pointer;
+}
+
+.fs-small {
+    font-size: 1rem;
 }
 
 
