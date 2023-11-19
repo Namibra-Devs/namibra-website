@@ -219,38 +219,37 @@ ul {
     height: 110vh;
 }
 
+.teams-div {
+    width: 100%;
+    background: url('./assets/imgs/waves/Wave3.svg') no-repeat bottom;
+    background-size: 100% 60%;
+}
+
 .contact-div {
     width: 100%;
     background: url('./assets/imgs//waves/Wave4.svg') no-repeat bottom;
     background-size: 100% 100%;
-    height: 110vh;
+    /* height: 110vh; */
 }
 
-.mission {
+.mission,.postions-div {
     width: 100%;
     background: url('./assets/imgs//waves/Wave6.svg') no-repeat bottom;
     background-size: 100% 160%;
-    height: 110vh; 
+    /* height: 100vh;  */
 }
 
-@media (max-width: 780px) {
-    .contact-div,
-    .testimonials-div,
-.contact-about {
-    height: 100%;
-}
-}
 
 .newsletter-bg {
     width: 100%;
-    background: url('./assets/imgs/other/newsletter-bg.svg') no-repeat bottom;
     height: 100%;
+    background: url('./assets/imgs/other/newsletter-bg.svg') no-repeat bottom;
     background-size: cover;
 }
 .job-view-bg {
     width: 100%;
-    background: url('./assets/imgs/other/job-view.svg') no-repeat bottom;
     height: 100%;
+    background: url('./assets/imgs/other/job-view.svg') no-repeat bottom;
     background-size: cover;
 }
 
@@ -295,6 +294,11 @@ ul {
 .active {
     color: var(--primary-clr) !important;
 }
+.applications-active {
+    background-color: var(--primary-clr);
+    color: var(--white);
+    border-radius: .5rem;
+}
 /* Success Animate */
 
 .pop-animate { 
@@ -321,3 +325,10 @@ ul {
     animation-name: bounce; 
  }
 
+ @media (max-width: 780px) {
+    .contact-div,
+    .testimonials-div,
+.contact-about, .mission {
+    height: 100%;
+}
+}
