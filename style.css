@@ -294,6 +294,11 @@ ul {
 .active {
     color: var(--primary-clr) !important;
 }
+
+/* .active-div, .long-line {
+    background-color: var(--primary-clr);
+} */
+
 .applications-active {
     background-color: var(--primary-clr);
     color: var(--white);
