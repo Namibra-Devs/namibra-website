@@ -290,10 +290,10 @@ ul {
 .fs-small {
     font-size: 1rem;
 }
-
+/* 
 .nav-link.active {
     color: var(--primary-clr);
-}
+} */
 
 .active-div, .long-line {
     background-color: var(--primary-clr);
