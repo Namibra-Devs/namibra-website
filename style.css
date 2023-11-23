@@ -291,17 +291,13 @@ ul {
     font-size: 1rem;
 }
 
-.active {
-    color: var(--primary-clr) !important;
-}
 
-.app-active {
-    color: var(--white);
+
+.active-div, .long-line {
     background-color: var(--primary-clr);
-    border-radius: .5rem;
 }
 
-.applications-active {
+.apps-active {
     background-color: var(--primary-clr);
     color: var(--white);
     border-radius: .5rem;
