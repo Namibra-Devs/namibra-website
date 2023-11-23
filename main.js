@@ -1,5 +1,5 @@
-const header = document.getElementById("link-div");
-const btns = header.getElementsByClassName("about-link");
+// const header = document.getElementById("link-div");
+const btns = document.getElementsByClassName("about-link");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
         let current = document.getElementsByClassName("link-active");
